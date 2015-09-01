@@ -1,0 +1,34 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages
+
+export PYTHONPATH=$PYTHONPATH:/usr/local/seafile/seafile-server-latest/seahub
+export PYTHONPATH=$PYTHONPATH:/usr/local/seafile/seafile-server-latest/seafile/lib64/python2.6/site-packages
+export PYTHONPATH=$PYTHONPATH:/usr/local/seafile/seafile-server-latest/seahub/thirdpart
+
+export CCNET_CONF_DIR=/usr/local/seafile/ccnet
+export SEAFILE_CONF_DIR=/usr/local/seafile/seafile-data
+
+export NEXUS_HOME=/usr/local/nexus
+export RUN_AS_USER=root
+
+export JAVA_HOME=/usr/local/java
+
+export PATH=$PATH:$HOME/bin
+export PATH=$PATH:/usr/local/php/bin
+export PATH=$PATH:/usr/local/php/sbin
+export PATH=$PATH:/usr/local/httpd/bin
+export PATH=$PATH:/usr/local/nginx/sbin
+export PATH=$PATH:/usr/local/mongodb/bin
+export PATH=$PATH:/usr/local/seafile/seafile-server-latest
+export PATH=$PATH:/usr/local/seafile-cli-4.0.4
+export PATH=$PATH:$JAVA_HOME/bin
+export PATH=$PATH:$NEXUS_HOME/nexus-latest/bin
+
